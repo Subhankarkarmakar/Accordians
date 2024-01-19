@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(32, 29, 29);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: teal;
+}
+.Accordian{
+    border: 1px solid rgb(28, 159, 16);
+    margin: auto;
+    padding: 10px;
+
+}
+.accordian_title{
+    font-size: 22px;
+    color: bisque;
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(43, 0, 255);
+}
+
+.accordian_title h3{
+    flex: 1;
+}
+i{
+    font-size: 22px;
+}
+.accordian_content{
+    color: darkgoldenrod;
+    font-size: 18px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.accordian_content{
+    display: none;
+}
+.accordian_title.active + .accordian_content{
+    display: block;
+}
